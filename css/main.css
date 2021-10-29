@@ -87,9 +87,56 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Color Theme Swatches in Hex */
+.Voyages-1-hex { color: #45858C; }
+.Voyages-2-hex { color: #A0D9D9; }
+.Voyages-3-hex { color: #D9C589; }
+.Voyages-4-hex { color: #BF9765; }
+.Voyages-5-hex { color: #D92B04; }
+
+#pop {
+  background-color: #D9C589;
+}
+button {
+  background-color: #45858C;
+  color: #A0D9D9;
+}
+
+   header {
+     background-color: #45858C;
+     color: #A0D9D9;
+   }
+
    header h1, header p {
      margin: 0 1rem;
      padding: 0;
+   }
+
+   nav {
+     background-color: #D9C589;
+   }
+
+   main {
+     background-color: #BF9765;
+     height: 100vh;
+   }
+
+   table {
+    border: solid 1px #D92B04 !important;
+    box-shadow: #D9C589 5px -5px 8px;
+   } 
+
+   table>thead>tr {
+     background-color: #45858C;
+   }
+
+   table>tbody {
+     background-color: #D9C589;
+   }
+
+   footer {
+     background-color: #45858C;
+     color: #A0D9D9;
    }
 
    
