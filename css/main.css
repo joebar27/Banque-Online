@@ -84,64 +84,118 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+                                Author's custom styles
    ========================================================================== */
 
 /* Color Theme Swatches in Hex */
-.Voyages-1-hex { color: #45858C; }
-.Voyages-2-hex { color: #A0D9D9; }
-.Voyages-3-hex { color: #D9C589; }
-.Voyages-4-hex { color: #BF9765; }
-.Voyages-5-hex { color: #D92B04; }
+.Voyages-1-hex {
+  color: #45858C;
+}
+
+.Voyages-2-hex {
+  color: #A0D9D9;
+}
+
+.Voyages-3-hex {
+  color: #D9C589;
+}
+
+.Voyages-4-hex {
+  color: #BF9765;
+}
+
+.Voyages-5-hex {
+  color: #D92B04;
+}
 
 #pop {
   background-color: #D9C589;
 }
+
 button {
   background-color: #45858C;
   color: #A0D9D9;
 }
 
-   header {
-     background-color: #45858C;
-     color: #A0D9D9;
-   }
+header {
+  display: flex;
+  background-color: #45858C;
+  color: #A0D9D9;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+}
 
-   header h1, header p {
-     margin: 0 1rem;
-     padding: 0;
-   }
+header>div>h1,
+header>div>p {
+  display: flex;
 
-   nav {
-     background-color: #D9C589;
-   }
+  margin: 1rem;
+  padding: 0;
+  justify-content: center;
+}
 
-   main {
-     background-color: #BF9765;
-     height: 100vh;
-   }
+header>div>h1 {
+  font-size: 2rem;
+}
 
-   table {
-    border: solid 1px #D92B04 !important;
-    box-shadow: #D9C589 5px -5px 8px;
-   } 
+nav {
+  background-color: #D9C589;
+  color: #45858C;
+}
 
-   table>thead>tr {
-     background-color: #45858C;
-   }
+main {
+  background-color: #BF9765;
+  height: 100vh;
+}
 
-   table>tbody {
-     background-color: #D9C589;
-   }
+table {
+  border: solid 1px #D92B04 !important;
+  box-shadow: #D9C589 5px -5px 8px;
+}
 
-   footer {
-     background-color: #45858C;
-     color: #A0D9D9;
-   }
+table>thead>tr {
+  background-color: #45858C;
+  color: #A0D9D9;
+}
 
-   
+table>tbody {
+  background-color: #D9C589;
+}
+
+footer {
+  background-color: #45858C;
+  color: #A0D9D9;
+}
+
+footer a {
+  font-size: 1.5rem;
+  color: #D9C589;
+  /* text-decoration-line: none; */
+}
 /* ==========================================================================
-   Helper classes
+                                  Media Query
+   ========================================================================== */
+
+/*pour les taille d'ecran md*/
+   @media screen and (min-width: 768px) {
+  header>div>h1 {
+    font-size: 3rem;
+  }
+}
+
+/*pour les taille d'ecran lg*/
+@media screen and (min-width: 992px) {
+  header>div>h1 {
+    font-size: 4rem;
+  }
+  header>div>p {
+    font-size: 1.2rem;
+  }
+}
+
+/* ==========================================================================
+                                Helper classes
    ========================================================================== */
 
 /*
@@ -223,29 +277,13 @@ button {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -262,11 +300,11 @@ button {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -313,4 +351,3 @@ button {
     page-break-after: avoid;
   }
 }
-
