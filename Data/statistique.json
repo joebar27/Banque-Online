@@ -1,22 +1,62 @@
 [
-    {
-        "montant": "5000",
-        "taux": "9.5%",
-        "duree": "24 mois"
-    },
-    {
-        "montant": "5000",
-        "taux": "7.5%",
-        "duree": "12 mois"
-    },
-    {
-        "montant": "10000",
-        "taux": "5.5%",
-        "duree": "36 mois"
-    },
-    {
-        "montant": "15000",
-        "taux": "5.5%",
-        "duree": "48 mois"
-    }
+    [
+        {
+            "montant": "5000",
+            "taux": "9.5%",
+            "duree": "24 mois"
+        },
+        {
+            "montant": "5000",
+            "taux": "7.5%",
+            "duree": "12 mois"
+        },
+        {
+            "montant": "10000",
+            "taux": "5.5%",
+            "duree": "36 mois"
+        },
+        {
+            "montant": "15000",
+            "taux": "5.5%",
+            "duree": "48 mois"
+        }
+    ],
+    [
+        {
+            "janvier": 4691
+        },
+        {
+            "fevrier": 5581
+        },
+        {
+            "mars": 5588
+        },
+        {
+            "avril": 5461
+        },
+        {
+            "mai": 5792
+        },
+        {
+            "juin": 6102
+        },
+        {
+            "juillet": 6307
+        },
+        {
+            "aout": 6489
+        },
+        {
+            "septembre": 6553
+        },
+        {
+            "octobre": 6675
+        },
+        {
+            "novembre": 6758
+        },
+        {
+            "decembre": 6517
+        }
+    ]
 ]

@@ -90,62 +90,14 @@ textarea {
   width: 80vw;
   height: 30vh;
   border: solid 3px black;
-  /* padding: 1em; */
 }
 
 .bar {
-    width: 8% ;
-  /* height: 200px; */
-  margin: 1px;
-  padding: 3px;
-}
-
-#bar1 {
-  background-color: rgb(47, 0, 255);
-}
-
-#bar2 {
-  background-color: rgb(255, 38, 0);
-}
-
-#bar3 {
-  background-color: rgb(0, 255, 13);
-}
-
-#bar4 {
-  background-color: rgb(255, 0, 212);
-}
-
-#bar5 {
-  background-color: rgb(238, 255, 0);
-}
-
-#bar6 {
-  background-color: rgb(0, 255, 242);
-}
-
-#bar7 {
-  background-color: rgb(255, 136, 0);
-}
-
-#bar8 {
-  background-color: rgb(255, 0, 136);
-}
-
-#bar9 {
-  background-color: rgb(0, 255, 149);
-}
-
-#bar10 {
-  background-color: rgb(0, 26, 255);
-}
-
-#bar11 {
-  background-color: rgb(183, 0, 255);
-}
-
-#bar12 {
-  background-color: springgreen;
+  width: calc((100% / 12) - (0.5em - 0.5em / 12));
+  padding: 0;
+  font-size: 0.5rem;
+  text-align: center;
+  background-color: #45858C;
 }
 
 /* ==========================================================================
@@ -153,7 +105,24 @@ textarea {
        ========================================================================== */
 @media screen and (min-width: 768px) {}
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+
+    h3 {
+        font-size: 3rem;
+        color: #A0D9D9;
+        background-color: #45858C;
+    }
+    .table th, .table td {
+        font-size: 2rem;
+    }
+    #graphbar {
+        width: 60vw;
+    }
+
+    .bar {
+        font-size: 1.2rem;
+    }
+}
 
 /* ==========================================================================
        Helper classes
