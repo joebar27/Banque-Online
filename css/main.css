@@ -168,21 +168,27 @@ footer {
   color: #A0D9D9;
 }
 
+footer ul {
+  list-style-type: none;
+}
+
 footer a {
   color: #D9C589;
-  /* text-decoration-line: none; */
 }
+
 /* ==========================================================================
                                   Media Query
    ========================================================================== */
 
 /*pour les taille d'ecran md*/
-   @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   header>div>h1 {
     font-size: 3rem;
   }
 
-  #tab1, #tab2, #tab3 {
+  #tab1,
+  #tab2,
+  #tab3 {
     height: 200px;
     margin: 0 0;
   }
@@ -197,6 +203,7 @@ footer a {
   header>div>h1 {
     font-size: 4rem;
   }
+
   header>div>p {
     font-size: 1.2rem;
   }
