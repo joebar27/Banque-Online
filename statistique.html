@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/statistique.css">
@@ -30,7 +30,7 @@
   <header>
     <div>
       <h1>NormaBanque</h1>
-    <p>La Banque en ligne Normande pour tous</p>
+      <p>La Banque en ligne Normande pour tous</p>
     </div>
   </header>
 
@@ -46,7 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link"  href="blog.html">Blog</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Statistiques</a>
@@ -84,13 +84,48 @@
   </nav>
 
   <!-- ################################################### MAIN ##################################################################### -->
-  
-  <main class="container d-flex justify-content-center">
 
+  <main class="container-fluid d-flex flex-wrap justify-content-center">
+
+    <section class="d-flex col-12 flex-wrap justify-content-center mt-3 justify-content-md-around mt-md-5">
+
+      <div class="table-responsive">
+        <h3>Tableau d'emprunt</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th class="text-center">Montant Emprunter</th>
+              <th class="text-center">Taux d'emprunt</th>
+              <th class="text-center">Durée d'emprunt</th>
+            </tr>
+          </thead>
+          <tbody id="dispEmprunt">
+                        
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="d-flex justify-content-center mb-5">
+      <div id="graphbar" class="row">
+        <div id="bar1" class="d-flex bar"></div>
+        <div id="bar2" class="d-flex bar"></div>
+        <div id="bar3" class="d-flex bar"></div>
+        <div id="bar4" class="d-flex bar"></div>
+        <div id="bar5" class="d-flex bar"></div>
+        <div id="bar6" class="d-flex bar"></div>
+        <div id="bar7" class="d-flex bar"></div>
+        <div id="bar8" class="d-flex bar"></div>
+        <div id="bar9" class="d-flex bar"></div>
+        <div id="bar10" class="d-flex bar"></div>
+        <div id="bar11" class="d-flex bar"></div>
+        <div id="bar12" class="d-flex bar"></div>
+      </div>
+    </section>
   </main>
 
   <!-- ################################################### FOOTER ##################################################################### -->
-  
+
   <footer class="container-fluid fixed-bottom">
     <div>
       <ul class="d-flex justify-content-around ">
@@ -117,7 +152,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="js/plugins.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/statistique.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

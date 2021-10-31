@@ -4,19 +4,16 @@ function getBlogs() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
       // tout va bien, la réponse a été reçue
       if (httpRequest.status === 200) {
-        // parfait !
-        console.log("reponse : ", JSON.parse(httpRequest.response));
-
         // Declaration des elements html
         const blog = document.getElementById("blog");
         
         // Affectation de la reponse dans une variable
         let blogs = JSON.parse(httpRequest.response);
-        console.log("longueur :", blogs.length);
-        for (let i = 0; i < (blogs.length); i++) {
+        console.log("longueur :", blogs);
+        for (let i = 0; i < blogs.length; i++) {
           // Execution de la fonction
           
-          console.log("newblog :", blog);
+          // console.log("newblog :", blog);
           blog.innerHTML += `<div><h4>` + blogs[i].id + `</h2><p>` + blogs[i].titre + `</p><p>` + blogs[i].contenu + `</p></div>`;
         //   console.log("blog"+`${i}`);
         }
