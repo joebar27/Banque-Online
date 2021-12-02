@@ -89,45 +89,45 @@ textarea {
 
 /* Color Theme Swatches in Hex */
 .Voyages-1-hex {
-  color: #45858C;
+  color: #45858c;
 }
 
 .Voyages-2-hex {
-  color: #A0D9D9;
+  color: #a0d9d9;
 }
 
 .Voyages-3-hex {
-  color: #D9C589;
+  color: #d9c589;
 }
 
 .Voyages-4-hex {
-  color: #BF9765;
+  color: #bf9765;
 }
 
 .Voyages-5-hex {
-  color: #D92B04;
+  color: #d92b04;
 }
 
 #pop {
-  background-color: #D9C589;
+  background-color: #d9c589;
 }
 
 button {
-  background-color: #45858C;
-  color: #A0D9D9;
+  background-color: #45858c;
+  color: #a0d9d9;
 }
 
 header {
   display: flex;
-  background-color: #45858C;
-  color: #A0D9D9;
+  background-color: #45858c;
+  color: #a0d9d9;
   height: 25vh;
   justify-content: center;
   align-items: center;
 }
 
-header>div>h1,
-header>div>p {
+header > div > h1,
+header > div > p {
   display: flex;
 
   margin: 1rem;
@@ -135,37 +135,45 @@ header>div>p {
   justify-content: center;
 }
 
-header>div>h1 {
+header > div > h1 {
   font-size: 2rem;
 }
 
 nav {
-  background-color: #D9C589;
-  color: #45858C;
+  background-color: #d9c589;
+  color: #45858c;
+  height: 5vh;
 }
 
 main {
-  background-color: #BF9765;
-  min-height: 100vh;
+  background-color: #bf9765;
+  min-height: 65vh;
 }
 
-table {
-  border: solid 1px #D92B04 !important;
-  box-shadow: #D9C589 5px -5px 8px;
+.account {
+  border: solid 1px #d92b04;
+  box-shadow: #d9c589 5px -5px 8px;
+  list-style: none;
+  padding: 0 0 0.5em 0;
 }
 
-table>thead>tr {
-  background-color: #45858C;
-  color: #A0D9D9;
+.detailAccount {
+  margin-left: 0.5em;
 }
 
-table>tbody {
-  background-color: #D9C589;
+.detailAccount:first-child {
+  background-color: #45858c;
+  color: #a0d9d9;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
 }
 
 footer {
-  background-color: #45858C;
-  color: #A0D9D9;
+  background-color: #45858c;
+  color: #a0d9d9;
+  height: 5vh;
 }
 
 footer ul {
@@ -173,7 +181,7 @@ footer ul {
 }
 
 footer a {
-  color: #D9C589;
+  color: #d9c589;
 }
 
 /* ==========================================================================
@@ -182,7 +190,7 @@ footer a {
 
 /*pour les taille d'ecran md*/
 @media screen and (min-width: 768px) {
-  header>div>h1 {
+  header > div > h1 {
     font-size: 3rem;
   }
 
@@ -200,11 +208,11 @@ footer a {
 
 /*pour les taille d'ecran lg*/
 @media screen and (min-width: 992px) {
-  header>div>h1 {
+  header > div > h1 {
     font-size: 4rem;
   }
 
-  header>div>p {
+  header > div > p {
     font-size: 1.2rem;
   }
 }
@@ -298,7 +306,6 @@ footer a {
    ========================================================================== */
 
 @media print {
-
   *,
   *::before,
   *::after {
@@ -315,11 +322,11 @@ footer a {
   }
 
   a[href]::after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   /*

@@ -47,4 +47,4 @@
 
   <!-- ################################################### MAIN ##################################################################### -->
 
-  <main class="container-fluid d-flex flex-wrap justify-content-center">
+  <main class="container-fluid flex-wrap justify-content-center p-0">

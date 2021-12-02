@@ -1,4 +1,5 @@
 <?php
+
 function get_accounts() {
     return [
       [

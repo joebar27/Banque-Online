@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/blog.css">
   <link rel="stylesheet" href="css/statistique.css">
+  <link rel="stylesheet" href="css/contact.css">
   
 </head>
 

@@ -3,9 +3,9 @@ include "template/header.php";
 include "template/nav.php";
 ?>
 
-<section class="d-flex col-12 justify-content-center mt-3 justify-content-md-around mt-md-5">
+<section class="d-flex col-12 justify-content-center justify-content-md-around">
 
-    <div class="d-flex flex-column col-lg-6 flex-lg-column justify-content-center">
+    <div class="d-flex flex-column col-lg-6 flex-lg-column justify-content-center mt-md-3">
         <h3 class="d-flex justify-content-center text-center">Tableau d'emprunt</h3>
         <div class="d-flex justify-content-center table-responsive">
             <table class="table">
@@ -26,7 +26,7 @@ include "template/nav.php";
 
 <section class="d-flex clo-12 justify-content-center mb-5 justify-content-md-around mt-md-5">
     <div class="d-flex flex-wrap justify-content-center flex-lg-column">
-        <h3 class="d-flex justify-content-center">Barre graphe du CAC40 2020</h3>
+        <h3 class="d-flex justify-content-center">Barregraphe du CAC40 2020</h3>
         <div id="graphbar" class="row justify-content-around align-items-end">
             <div id="bar1" class="bar">JANV</div>
             <div id="bar2" class="bar">FEV</div>

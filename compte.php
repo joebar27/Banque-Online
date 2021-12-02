@@ -1,8 +1,11 @@
-<section id="popUp"></section>
 
-<section class="d-flex col-12 flex-wrap justify-content-center mt-3 justify-content-md-around mt-md-5">
 
-    <div id="tab1" class="col-10 col-md-5 mx-md-2 col-lg-3">
+<?php foreach($acounts.php as $compte){
+            echo '<li>' . $compte . '</li>'; 
+        } ?>
+
+
+    <!-- <div id="tab1" class="col-10 col-md-5 mx-md-2 col-lg-3">
         <table class="table">
             <thead>
                 <tr>
@@ -66,9 +69,7 @@
                 </tr>
             </tbody>
         </table>
-    </div>
+    </div> -->
 
-</section>
 
-  <script src="js/popup.js"></script>
-  <script src="js/main.js"></script>
+  
