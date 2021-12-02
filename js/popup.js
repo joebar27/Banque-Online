@@ -1,5 +1,5 @@
 const popUpDisplay = () => {
-  let popUpText = './Data/popUpText.txt';
+  let popUpText = './Data/popup.php';
   
     let httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function () {

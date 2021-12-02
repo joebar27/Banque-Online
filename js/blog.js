@@ -9,7 +9,7 @@ function getBlogs() {
         
         // Affectation de la reponse dans une variable
         let blogs = JSON.parse(httpRequest.response);
-        console.log("longueur :", blogs);
+        console.log("longueur :", blogs.length);
         for (let i = 0; i < blogs.length; i++) {
           // Execution de la fonction
           
