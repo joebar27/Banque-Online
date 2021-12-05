@@ -14,7 +14,7 @@ function getBlogs() {
           // Execution de la fonction
           
           // console.log("newblog :", blog);
-          blog.innerHTML += `<div><h4>` + blogs[i].id + `</h2><p>` + blogs[i].titre + `</p><p>` + blogs[i].contenu + `</p></div>`;
+          blog.innerHTML += `<div class="d-flex flex-wrap mx-md-2 col-10 col-md-5 col-lg-5"><h4 class="d-flex col-12">` + blogs[i].id + `</h2><p class="d-flex col-12">` + blogs[i].titre + `</p><p class="d-flex col-12">` + blogs[i].contenu + `</p></div>`;
         //   console.log("blog"+`${i}`);
         }
       } else {

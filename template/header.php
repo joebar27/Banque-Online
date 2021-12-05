@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/blog.css">
   <link rel="stylesheet" href="css/statistique.css">
   <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/createCB.css">
   
 </head>
 

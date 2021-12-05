@@ -108,8 +108,22 @@ textarea {
   color: #d92b04;
 }
 
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 #pop {
-  background-color: #d9c589;
+  background-color: #bf9765;
+}
+
+#pop h1 {
+  font-size: 1.5rem;
+  color: #d92b04;
+}
+
+#pop p {
+  color: #45858c;
+  font-size: 0.8rem;
 }
 
 button {
@@ -142,7 +156,7 @@ header > div > h1 {
 nav {
   background-color: #d9c589;
   color: #45858c;
-  height: 5vh;
+  min-height: 5vh;
 }
 
 main {
@@ -151,14 +165,29 @@ main {
 }
 
 .account {
-  border: solid 1px #d92b04;
-  box-shadow: #d9c589 5px -5px 8px;
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  color: #45858c;
+}
+
+.account:hover {
+  transform: scale(0.98);
+  color: #40a0a0;
+}
+
+.accountList {
+  border: solid 2px #A0D9D9;
+  border-radius: 5px;
+  box-shadow: 10px 4px 10px rgba(51, 51, 51, 0.7);
+  background-color: #d9c589;
   list-style: none;
-  padding: 0 0 0.5em 0;
+  padding: 0;
+  margin: 0;
 }
 
 .detailAccount {
-  margin-left: 0.5em;
+  font-size: 1rem;
+  margin: 0.5rem;
 }
 
 .detailAccount:first-child {
@@ -166,7 +195,7 @@ main {
   color: #a0d9d9;
   padding: 0.5rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 
@@ -194,11 +223,24 @@ footer a {
     font-size: 3rem;
   }
 
-  #tab1,
-  #tab2,
-  #tab3 {
-    height: 200px;
-    margin: 0 0;
+  #pop p {
+    font-size: 1.4rem;
+  }
+
+  #pop h1 {
+    font-size: 2.5rem;
+  }
+
+  #popClose {
+    font-size: 1.4rem;
+  }
+
+  .detailAccount {
+    font-size: 1.1rem;
+  }
+  
+  .detailAccount:first-child {
+    font-size: 2rem;
   }
 
   footer a {
@@ -214,6 +256,18 @@ footer a {
 
   header > div > p {
     font-size: 1.2rem;
+  }
+
+  #pop p {
+    font-size: 1.4rem;
+  }
+
+  #popClose {
+    font-size: 1.5rem;
+  }
+
+  #pop h1 {
+    font-size: 3rem;
   }
 }
 

@@ -18,7 +18,7 @@ include "template/nav.php";
             </div>
             <textarea class="d-flex col-10 p-2" id="message" name="message" placeholder="message *"></textarea>
         </div>
-        <input class="button p-0 col-12" type="button" value="Envoyer" />
+        <button class="button p-0 mt-lg-3 col-12" type="button" value="Envoyer">Envoyer</button>
         <div class="d-flex flex-wrap justify-content-center align-content-center">
             <p class="d-flex form-message m-0 p-3"></p>
         </div>

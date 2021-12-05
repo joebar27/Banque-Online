@@ -21,4 +21,5 @@ const popUpDisplay = () => {
 
 const popUpClose = () => {
   els.popUp.classList.add('hidden');
+  sessionStorage.setItem("informed", true);
 }
