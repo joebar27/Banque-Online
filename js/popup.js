@@ -1,5 +1,5 @@
 const popUpDisplay = () => {
-  let popUpText = './Data/popUpText.txt';
+  let popUpText = './Data/popup.php';
   
     let httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function () {
@@ -21,4 +21,5 @@ const popUpDisplay = () => {
 
 const popUpClose = () => {
   els.popUp.classList.add('hidden');
+  sessionStorage.setItem("informed", true);
 }

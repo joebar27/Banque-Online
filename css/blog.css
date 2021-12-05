@@ -86,71 +86,31 @@ textarea {
 /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-nav {
-  /* background-color: salmon; */
-}
 
-main {
-  /* background-color: saddlebrown; */
-}
-
-/* #blog>div>h4 {
-  background-color: #45858C;
-} */
-
-#blog>div {
-  background-color: #D9C589;
-  width: 90%;
-  border: solid 2px #D92B04;
-  border-radius: 10px;
-  box-shadow: rgba(27, 26, 26, 0.794) 5px -5px 8px;
-  display: flex;
-  flex-direction: column;
+#blog > div {
+  border: solid 2px #a0d9d9;
+  border-radius: 5px;
+  background-color: #d9c589;
+  box-shadow: 10px 4px 10px rgba(51, 51, 51, 0.7);
   margin-bottom: 5vh;
 }
 
-#blog>div>h4,
-#blog>div>p {
-  /* background-color: rosybrown; */
-  display: flex;
+#blog > div > h4,
+#blog > div > p {
   justify-content: center;
   align-content: center;
   padding: 0;
   margin: 0;
+  color: #45858c;
 }
 
 /* ==========================================================================
                                         Media query
      ========================================================================== */
 @media screen and (min-width: 768px) {
-  main {
-    justify-content: center;
-    height: 90vh;
-  }
-
-  #blog {
-
-    justify-content: space-between;
-  }
-
-  #blog>div {
-    width: 45%;
-    border-radius: 10px;
-    box-shadow: rgb(27, 26, 26) 8px -8px 8px;
-    margin-bottom: 5vh;
-    justify-content: space-around;
-  }
 }
 
 @media screen and (min-width: 992px) {
-  #blog {
-    width: 80vw;
-  }
-
-  #blog>div {
-    width: 40%;
-    margin: 0 auto 5vh;
-  }
 }
 
 /* ==========================================================================
@@ -246,9 +206,9 @@ main {
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -259,7 +219,6 @@ main {
      ========================================================================== */
 
 @media print {
-
   *,
   *::before,
   *::after {
@@ -276,11 +235,11 @@ main {
   }
 
   a[href]::after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   /*

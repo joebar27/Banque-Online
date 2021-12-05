@@ -89,45 +89,59 @@ textarea {
 
 /* Color Theme Swatches in Hex */
 .Voyages-1-hex {
-  color: #45858C;
+  color: #45858c;
 }
 
 .Voyages-2-hex {
-  color: #A0D9D9;
+  color: #a0d9d9;
 }
 
 .Voyages-3-hex {
-  color: #D9C589;
+  color: #d9c589;
 }
 
 .Voyages-4-hex {
-  color: #BF9765;
+  color: #bf9765;
 }
 
 .Voyages-5-hex {
-  color: #D92B04;
+  color: #d92b04;
+}
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #pop {
-  background-color: #D9C589;
+  background-color: #bf9765;
+}
+
+#pop h1 {
+  font-size: 1.5rem;
+  color: #d92b04;
+}
+
+#pop p {
+  color: #45858c;
+  font-size: 0.8rem;
 }
 
 button {
-  background-color: #45858C;
-  color: #A0D9D9;
+  background-color: #45858c;
+  color: #a0d9d9;
 }
 
 header {
   display: flex;
-  background-color: #45858C;
-  color: #A0D9D9;
+  background-color: #45858c;
+  color: #a0d9d9;
   height: 25vh;
   justify-content: center;
   align-items: center;
 }
 
-header>div>h1,
-header>div>p {
+header > div > h1,
+header > div > p {
   display: flex;
 
   margin: 1rem;
@@ -135,37 +149,60 @@ header>div>p {
   justify-content: center;
 }
 
-header>div>h1 {
+header > div > h1 {
   font-size: 2rem;
 }
 
 nav {
-  background-color: #D9C589;
-  color: #45858C;
+  background-color: #d9c589;
+  color: #45858c;
+  min-height: 5vh;
 }
 
 main {
-  background-color: #BF9765;
-  min-height: 100vh;
+  background-color: #bf9765;
+  min-height: 65vh;
 }
 
-table {
-  border: solid 1px #D92B04 !important;
-  box-shadow: #D9C589 5px -5px 8px;
+.account {
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  color: #45858c;
 }
 
-table>thead>tr {
-  background-color: #45858C;
-  color: #A0D9D9;
+.account:hover {
+  transform: scale(0.98);
+  color: #40a0a0;
 }
 
-table>tbody {
-  background-color: #D9C589;
+.accountList {
+  border: solid 2px #A0D9D9;
+  border-radius: 5px;
+  box-shadow: 10px 4px 10px rgba(51, 51, 51, 0.7);
+  background-color: #d9c589;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detailAccount {
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.detailAccount:first-child {
+  background-color: #45858c;
+  color: #a0d9d9;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0;
 }
 
 footer {
-  background-color: #45858C;
-  color: #A0D9D9;
+  background-color: #45858c;
+  color: #a0d9d9;
+  height: 5vh;
 }
 
 footer ul {
@@ -173,7 +210,7 @@ footer ul {
 }
 
 footer a {
-  color: #D9C589;
+  color: #d9c589;
 }
 
 /* ==========================================================================
@@ -182,15 +219,28 @@ footer a {
 
 /*pour les taille d'ecran md*/
 @media screen and (min-width: 768px) {
-  header>div>h1 {
+  header > div > h1 {
     font-size: 3rem;
   }
 
-  #tab1,
-  #tab2,
-  #tab3 {
-    height: 200px;
-    margin: 0 0;
+  #pop p {
+    font-size: 1.4rem;
+  }
+
+  #pop h1 {
+    font-size: 2.5rem;
+  }
+
+  #popClose {
+    font-size: 1.4rem;
+  }
+
+  .detailAccount {
+    font-size: 1.1rem;
+  }
+  
+  .detailAccount:first-child {
+    font-size: 2rem;
   }
 
   footer a {
@@ -200,12 +250,24 @@ footer a {
 
 /*pour les taille d'ecran lg*/
 @media screen and (min-width: 992px) {
-  header>div>h1 {
+  header > div > h1 {
     font-size: 4rem;
   }
 
-  header>div>p {
+  header > div > p {
     font-size: 1.2rem;
+  }
+
+  #pop p {
+    font-size: 1.4rem;
+  }
+
+  #popClose {
+    font-size: 1.5rem;
+  }
+
+  #pop h1 {
+    font-size: 3rem;
   }
 }
 
@@ -298,7 +360,6 @@ footer a {
    ========================================================================== */
 
 @media print {
-
   *,
   *::before,
   *::after {
@@ -315,11 +376,11 @@ footer a {
   }
 
   a[href]::after {
-    content: " ("attr(href) ")";
+    content: " (" attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " ("attr(title) ")";
+    content: " (" attr(title) ")";
   }
 
   /*

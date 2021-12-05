@@ -1,0 +1,30 @@
+/* ==========================================================================
+                                Custom createCB.php
+   ========================================================================== */
+
+.creAcount {
+  margin-bottom: 0.5em;
+  padding: 1rem;
+  color: #45858c;
+  border: solid 2px #d92b04;
+  border-radius: 5px;
+  /* box-shadow: #d9c589 5px -5px 8px; */
+  box-shadow: 10px 4px 10px rgba(51, 51, 51, 0.7);
+  background-color: #d9c589;
+}
+
+.inputCreaAcount {
+background-color: #45858c;
+}
+
+/* ==========================================================================
+                                  Media Query
+   ========================================================================== */
+
+/*pour les taille d'ecran md*/
+@media screen and (min-width: 768px) {
+}
+
+/*pour les taille d'ecran lg*/
+@media screen and (min-width: 992px) {
+}
