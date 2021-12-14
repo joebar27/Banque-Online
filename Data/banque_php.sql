@@ -4,9 +4,16 @@ CREATE DATABASE banque_php CHARACTER
 SET
     'utf8';
 USE banque_php;
+
+-- Creation de l'utilisateur de la base de donnée.
+DROP user IF EXISTS 'BanquePHP'@'Localhost';
+CREATE USER 'BanquePHP'@'Localhost';
+-- allocation des droits pour la base de donné danque_php pour l'utilisateur BanquePHP avec le mot de passe banque76.
+GRANT ALL PRIVILEGES ON banque_php.* To 'BanquePHP'@'Localhost' IDENTIFIED BY 'banque76';
+
 -- Création de la table utilisateur :
 CREATE TABLE
-    Users (
+    Customers (
         id INT UNSIGNED NOT NULL AUTO_INCREMENT,
         firstname VARCHAR (255) NOT NULL,
         lastname VARCHAR (255) NOT NULL,
@@ -24,7 +31,7 @@ CREATE TABLE
     ) ENGINE = InnoDB;
 -- Ajout données utilisateur :
 INSERT INTO
-    Users (
+    Customers (
         firstname,
         lastname,
         birthdayDate,
@@ -73,9 +80,9 @@ CREATE TABLE
         typeAccount VARCHAR (50) NOT NULL,
         solde INT NOT NULL,
         createAccountDate DATE NOT NULL,
-        user_id INT UNSIGNED,
+        customers_id INT UNSIGNED,
         PRIMARY KEY (id),
-        FOREIGN KEY(user_id) REFERENCES Users(id)
+        FOREIGN KEY(customers_id) REFERENCES Customers(id)
     ) ENGINE = InnoDB;
 -- Ajout données utilisateur :
 INSERT INTO
@@ -86,14 +93,14 @@ CREATE TABLE
     Deal (
         id INT UNSIGNED NOT NULL AUTO_INCREMENT,
         dealNb INT (10) NOT NULL,
-        dealType INT NOT NULL,
+        dealType VARCHAR(10) NOT NULL,
         description VARCHAR (100) NOT NULL,
         amount DECIMAL (10, 2) NOT NULL,
         dealDate DATETIME NOT NULL,
-        user_id INT UNSIGNED,
+        customers_id INT UNSIGNED,
         account_id INT UNSIGNED,
         PRIMARY KEY (id),
-        FOREIGN KEY (user_id) REFERENCES Users(id),
+        FOREIGN KEY (customers_id) REFERENCES Customers(id),
         FOREIGN KEY (account_id) REFERENCES Accounts(id)
     ) ENGINE = InnoDB;
 -- Ajout données de transaction :
@@ -104,7 +111,7 @@ INSERT INTO
         amount,
         dealDate,
         account_id,
-        user_id
+        customers_id
     )
 VALUES (
         "débit",

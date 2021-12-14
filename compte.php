@@ -1,7 +1,7 @@
 <?php
 require "Data/acounts.php";
-include "template/header.php";
-include "template/nav.php";
+include "view/template/header.php";
+include "view/template/nav.php";
 
 $compte = get_accounts();
 $accountChoisses = $compte[$_GET["id"]];

@@ -1,13 +1,13 @@
 <?php
-include "template/header.php";
-include "template/nav.php";
+include "view/template/header.php";
+include "view/template/nav.php";
 
 $i = rand(0, 999999999);
 // var_dump($i);
 echo "<h2 class=\"d-flex text-center fs-4 justify-content-center py-3 ms-md-4 ms-lg-5 Voyages-1-hex\"> Vous etes sur le point de créer un Compte Bancaire</h2>";
 ?>
 <section class="d-flex flex-wrap justify-content-center">
-    <form class="d-flex flex-wrap justify-content-center col-5 creAcount">
+    <form class="d-flex flex-wrap justify-content-center col-5 creAcount" action="" method="POST">
         <label class="col-10" for="name">Nom :
             <input class="d-flex col-10 p-2 fs-5 inputCreaAcount" type="text" name="name" id="name" placeholder="Nom *">
         </label>
@@ -32,5 +32,5 @@ echo "<h2 class=\"d-flex text-center fs-4 justify-content-center py-3 ms-md-4 ms
 
 
 <?php
-include "template/footer.php";
+include "view/template/footer.php";
 ?>

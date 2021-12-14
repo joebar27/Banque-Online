@@ -1,6 +1,6 @@
 <?php
-include "template/header.php";
-include "template/nav.php";
+include "view/template/header.php";
+include "view/template/nav.php";
 ?>
 
 <section class="d-flex col-12 justify-content-center justify-content-md-around">
@@ -46,4 +46,4 @@ include "template/nav.php";
 
 <script src="js/statistique.js"></script>
 
-<?php include "template/footer.php"; ?>
+<?php include "view/template/footer.php"; ?>

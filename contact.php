@@ -1,6 +1,6 @@
 <?php
-include "template/header.php";
-include "template/nav.php";
+include "view/template/header.php";
+include "view/template/nav.php";
 
 ?>
 <section class="d-flex justify-content-center">
