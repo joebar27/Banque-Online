@@ -1,20 +1,9 @@
 <?php
-require "Data/acounts.php";
-include "view/template/header.php";
-include "view/template/nav.php";
+require 'model/connexion.php';
+session_start();
 
-$accounts = get_accounts();
-
+if(!isset($_SESSION["user"])) {
+include 'view'
+}
+include "view/indexView.php";
 ?>
-
-<section id="popUp"></section>
-
-<?php  
-include "view/loginView.php";
-// include "test.php";
-?>
-
-<script src="js/popup.js"></script>
-<script src="js/main.js"></script>
-
-<?php include "view/template/footer.php"; ?>
