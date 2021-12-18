@@ -165,7 +165,6 @@ main {
 }
 
 .account {
-  margin-bottom: 0.5em;
   text-decoration: none;
   color: #45858c;
 }
@@ -197,6 +196,10 @@ main {
   text-align: center;
   font-size: 1.1rem;
   margin: 0;
+}
+
+.accountList:last-child {
+  margin-bottom: 6vh;
 }
 
 footer {

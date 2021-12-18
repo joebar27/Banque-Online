@@ -14,11 +14,7 @@ include 'view/template/nav.php';
             <input class="d-flex col-10 p-2" type="text" id="log" name="log" placeholder="Identifiant *" />
             <input class="d-flex col-10 p-2" type="password" id="pass" name="pass" placeholder="Mot de passe *" />
         </div>
-        <span>
-            <?php
-            
-            ?>
-        </span>
+        <h4 class="text-danger d-flex justify-content-center align-content-center mt-3 col-12">Mot de passe incorect</h4>    
         <button class="button p-0 mt-lg-3 col-12" name="submit">Connection</button>
         <div class="d-flex flex-wrap justify-content-center align-content-center">
             <p class="d-flex form-message m-0 p-3"></p>

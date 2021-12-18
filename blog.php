@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "view/template/header.php";
 include "view/template/nav.php";
 ?>
@@ -7,6 +8,4 @@ include "view/template/nav.php";
 
 </section>
 
-<script src="js/blog.js"></script>
-
-<?php include "template/footer.php"; ?>
+<?php include "view/template/footer.php"; ?>

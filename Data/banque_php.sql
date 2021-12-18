@@ -18,7 +18,7 @@ CREATE TABLE
         firstname VARCHAR (255) NOT NULL,
         lastname VARCHAR (255) NOT NULL,
         birthdayDate DATE NOT NULL,
-        sex CHAR(1) NOT NULL,
+        sex CHAR(3) NOT NULL,
         adress VARCHAR (255) NOT NULL,
         city VARCHAR (255) NOT NULL,
         postalCode CHAR(5) NOT NULL,
@@ -49,7 +49,7 @@ VALUES (
         "ANGER",
         "Romain",
         "1987-06-13",
-        "M",
+        "Mr",
         "4 chemin des longueraies",
         "Jonquerets de livet",
         "27410",
@@ -62,7 +62,7 @@ VALUES (
         "AUGE",
         "Laura",
         "1989-05-02",
-        "F",
+        "Mme",
         "4 chemin des longueraies",
         "Jonqueret de livet",
         "27410",
@@ -86,8 +86,13 @@ CREATE TABLE
     ) ENGINE = InnoDB;
 -- Ajout données utilisateur :
 INSERT INTO
-    Accounts (accountNb, typeAccount, solde, createAccountDate)
-VALUES ("N0900123456", "Compte courant", "50", "2021-09-01"), ("N0900654321", "Livret A", "1250", "2021-09-10"), ("N0900654123", "PEL", "650", "2021-09-05");
+    Accounts (accountNb, typeAccount, solde, createAccountDate, customers_id)
+VALUES ("N0900123456", "Compte courant", 50, "2021-09-01", 1), 
+        ("N0900654321", "Livret A", 1250, "2021-09-10", 1), 
+        ("N0900654123", "PEL", 650, "2021-09-05", 1),
+        ("N0900321654", "Compte courant", 450, "2021-09-01", 2), 
+        ("N0900456123", "Livret A", 2150, "2021-09-10", 2), 
+        ("N0900162534", "PEL", 1650, "2021-09-05", 2);
 -- Création de la table des opérations bancaire :
 CREATE TABLE
     Deal (
