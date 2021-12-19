@@ -1,6 +1,6 @@
 <?php
-include 'view/template/header.php';
-include 'view/template/nav.php';
+include_once 'view/template/header.php';
+include_once 'view/template/nav.php';
 ?>
 
 <section id="popUp"></section>
@@ -14,11 +14,6 @@ include 'view/template/nav.php';
             <input class="d-flex col-10 p-2" type="text" id="log" name="log" placeholder="Identifiant *" />
             <input class="d-flex col-10 p-2" type="password" id="pass" name="pass" placeholder="Mot de passe *" />
         </div>
-        <span>
-            <?php
-            
-            ?>
-        </span>
         <button class="button p-0 mt-lg-3 col-12" name="submit">Connection</button>
         <div class="d-flex flex-wrap justify-content-center align-content-center">
             <p class="d-flex form-message m-0 p-3"></p>
@@ -26,9 +21,6 @@ include 'view/template/nav.php';
     </form>
 </section>
 
-<script src="js/popup.js"></script>
-<script src="js/main.js"></script>
-
 <?php
-include 'view/template/footer.php';
+include_once 'view/template/footer.php';
 ?>

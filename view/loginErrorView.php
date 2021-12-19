@@ -1,6 +1,6 @@
 <?php
-include 'view/template/header.php';
-include 'view/template/nav.php';
+include_once 'view/template/header.php';
+include_once 'view/template/nav.php';
 ?>
 
 <section id="popUp"></section>
@@ -22,9 +22,6 @@ include 'view/template/nav.php';
     </form>
 </section>
 
-<script src="js/popup.js"></script>
-<script src="js/main.js"></script>
-
 <?php
-include 'view/template/footer.php';
+include_once 'view/template/footer.php';
 ?>

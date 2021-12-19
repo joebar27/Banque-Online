@@ -184,8 +184,19 @@ main {
   margin: 0;
 }
 
+.accountList-detail{
+  border: solid 2px #A0D9D9;
+  border-radius: 5px;
+  box-shadow: 10px 4px 10px rgba(51, 51, 51, 0.7);
+  background-color: #d9c589;
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 2vh;
+  margin-bottom: 7vh;
+}
+
 .detailAccount {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 0.5rem;
 }
 
@@ -272,6 +283,12 @@ footer a {
   #pop h1 {
     font-size: 3rem;
   }
+
+  
+.accountList:last-child {
+  margin-bottom: 0;
+}
+
 }
 
 /* ==========================================================================

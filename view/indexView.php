@@ -1,7 +1,7 @@
 <?php
-include 'model/connexion.php';
-include 'view/template/header.php';
-include 'view/template/nav.php';
+require 'model/connexion.php';
+include_once 'view/template/header.php';
+include_once 'view/template/nav.php';
 
 ?>
 
@@ -17,4 +17,4 @@ echo('<h2 class="d-flex justify-content-center">
 include 'view/accountListView.php';
 ?>
 
-<?php include "view/template/footer.php"; ?>
+<?php include_once "view/template/footer.php"; ?>

@@ -24,119 +24,55 @@ if (isset($_POST['submit']) && (!empty($_POST['log']) && !empty($_POST['pass']))
 
 
 
-array(3) { 
-    [0]=> array(37) { 
-        ["id"]=> string(1) "1" 
-        [0]=> string(1) "1" 
-        ["firstname"]=> string(5) "ANGER" 
-        [1]=> string(5) "ANGER" ["lastname"]=> string(6) "Romain" [2]=> string(6) "Romain" ["birthdayDate"]=> string(10) "1987-06-13" 
-        [3]=> string(10) "1987-06-13" ["sex"]=> string(2) "Mr" [4]=> string(2) "Mr" ["adress"]=> string(24) "4 chemin des longueraies" 
-        [5]=> string(24) "4 chemin des longueraies" ["city"]=> string(19) "Jonquerets de livet" [6]=> string(19) "Jonquerets de livet" 
-        ["postalCode"]=> string(5) "27410" [7]=> string(5) "27410" ["country"]=> string(6) "France" [8]=> string(6) "France" 
-        ["phoneNb"]=> string(10) "0695915444" [9]=> string(10) "0695915444" ["email"]=> string(22) "anger.romain@gmail.com" 
-        [10]=> string(22) "anger.romain@gmail.com" ["login"]=> string(8) "joebar27" [11]=> string(8) "joebar27" 
-        ["password"]=> string(6) "azerty" [12]=> string(6) "azerty" [13]=> string(1) "1" ["accountNb"]=> string(11) "N0900123456" 
-        [14]=> string(11) "N0900123456" ["typeAccount"]=> string(14) "Compte courant" [15]=> string(14) "Compte courant" 
-        ["solde"]=> string(2) "50" [16]=> string(2) "50" ["createAccountDate"]=> string(10) "2021-09-01" [17]=> string(10) "2021-09-01" 
-        ["customers_id"]=> string(1) "1" [18]=> string(1) "1" 
-        } 
-    [1]=> array(37) { 
-        ["id"]=> string(1) "2" [0]=> string(1) "1" ["firstname"]=> string(5) "ANGER" [1]=> string(5) "ANGER" 
-        ["lastname"]=> string(6) "Romain" [2]=> string(6) "Romain" ["birthdayDate"]=> string(10) "1987-06-13" [3]=> string(10) "1987-06-13" 
-        ["sex"]=> string(2) "Mr" [4]=> string(2) "Mr" ["adress"]=> string(24) "4 chemin des longueraies" 
-        [5]=> string(24) "4 chemin des longueraies" 
-        ["city"]=> string(19) "Jonquerets de livet" [6]=> string(19) "Jonquerets de livet" ["postalCode"]=> string(5) "27410" 
-        [7]=> string(5) "27410" ["country"]=> string(6) "France" [8]=> string(6) "France" ["phoneNb"]=> string(10) "0695915444" 
-        [9]=> string(10) "0695915444" ["email"]=> string(22) "anger.romain@gmail.com" [10]=> string(22) "anger.romain@gmail.com" 
-        ["login"]=> string(8) "joebar27" [11]=> string(8) "joebar27" ["password"]=> string(6) "azerty" [12]=> string(6) "azerty" 
-        [13]=> string(1) "2" ["accountNb"]=> string(11) "N0900654321" [14]=> string(11) "N0900654321" ["typeAccount"]=> string(8) "Livret A" 
-        [15]=> string(8) "Livret A" ["solde"]=> string(4) "1250" [16]=> string(4) "1250" ["createAccountDate"]=> string(10) "2021-09-10" 
-        [17]=> string(10) "2021-09-10" ["customers_id"]=> string(1) "1" [18]=> string(1) "1" 
-        } 
-    [2]=> array(37) { 
-        ["id"]=> string(1) "3" [0]=> string(1) "1" ["firstname"]=> string(5) "ANGER" [1]=> string(5) "ANGER" ["lastname"]=> string(6) "Romain" 
-        [2]=> string(6) "Romain" ["birthdayDate"]=> string(10) "1987-06-13" [3]=> string(10) "1987-06-13" ["sex"]=> string(2) "Mr" 
-        [4]=> string(2) "Mr" ["adress"]=> string(24) "4 chemin des longueraies" [5]=> string(24) "4 chemin des longueraies" 
-        ["city"]=> string(19) "Jonquerets de livet" [6]=> string(19) "Jonquerets de livet" ["postalCode"]=> string(5) "27410" 
-        [7]=> string(5) "27410" ["country"]=> string(6) "France" [8]=> string(6) "France" ["phoneNb"]=> string(10) "0695915444" 
-        [9]=> string(10) "0695915444" ["email"]=> string(22) "anger.romain@gmail.com" [10]=> string(22) "anger.romain@gmail.com" 
-        ["login"]=> string(8) "joebar27" [11]=> string(8) "joebar27" ["password"]=> string(6) "azerty" [12]=> string(6) "azerty" 
-        [13]=> string(1) "3" ["accountNb"]=> string(11) "N0900654123" [14]=> string(11) "N0900654123" ["typeAccount"]=> string(3) "PEL" 
-        [15]=> string(3) "PEL" ["solde"]=> string(3) "650" [16]=> string(3) "650" ["createAccountDate"]=> string(10) "2021-09-05" 
-        [17]=> string(10) "2021-09-05" ["customers_id"]=> string(1) "1" [18]=> string(1) "1" 
-        } 
-    }
+SELECT firstname, lastname, typeAccount, accountNb, createAccountDate, solde, dealNb, dealType, description, dealDate, amount 
+FROM customers c 
+INNER JOIN deal d 
+ON c.id = d.customers_id 
+INNER JOIN accounts a 
+ON c.id = a.customers_id
 
 
-
-
-
-
-
-array(37) { 
-    ["id"]=> string(1) "1" 
-    [0]=> string(1) "1" 
-    ["firstname"]=> string(5) "ANGER" 
-    [1]=> string(5) "ANGER" 
-    ["lastname"]=> string(6) "Romain" 
-    [2]=> string(6) "Romain" 
-    ["birthdayDate"]=> string(10) "1987-06-13" 
-    [3]=> string(10) "1987-06-13" 
-    ["sex"]=> string(2) "Mr" 
-    [4]=> string(2) "Mr" 
-    ["adress"]=> string(24) "4 chemin des longueraies" 
-    [5]=> string(24) "4 chemin des longueraies" 
-    ["city"]=> string(19) "Jonquerets de livet" 
-    [6]=> string(19) "Jonquerets de livet" 
-    ["postalCode"]=> string(5) "27410" 
-    [7]=> string(5) "27410" 
-    ["country"]=> string(6) "France" 
-    [8]=> string(6) "France" 
-    ["phoneNb"]=> string(10) "0695915444" 
-    [9]=> string(10) "0695915444" 
-    ["email"]=> string(22) "anger.romain@gmail.com" 
-    [10]=> string(22) "anger.romain@gmail.com" 
-    ["login"]=> string(8) "joebar27" 
-    [11]=> string(8) "joebar27" 
-    ["password"]=> string(6) "azerty" 
-    [12]=> string(6) "azerty" 
-    [13]=> string(1) "1" 
-    ["accountNb"]=> string(11) "N0900123456" 
-    [14]=> string(11) "N0900123456" 
-    ["typeAccount"]=> string(14) "Compte courant" 
-    [15]=> string(14) "Compte courant" 
-    ["solde"]=> string(2) "50" 
-    [16]=> string(2) "50" 
-    ["createAccountDate"]=> string(10) "2021-09-01" 
-    [17]=> string(10) "2021-09-01" 
-    ["customers_id"]=> string(1) "1" 
-    [18]=> string(1) "1" }
 
 
 
 Array ( 
     [0] => Array ( 
-        [id] => 1 
+        [firstname] => AUGE 
+        [lastname] => Laura 
         [typeAccount] => Compte courant 
-        [firstname] => ANGER 
-        [lastname] => Romain 
-        [accountNb] => N0900123456 
-        [solde] => 50 
+        [accountNb] => N0900321654 
+        [createAccountDate] => 2021-09-01 
+        [solde] => 450 
+        [dealNb] => 0 
+        [dealType] => débit 
+        [description] => Achat pull moche de noel 
+        [dealDate] => 2021-12-18 01:21:39 
+        [amount] => 35.00 
     ) 
     [1] => Array ( 
-        [id] => 2 
-        [typeAccount] => Livret A 
-        [firstname] => ANGER 
-        [lastname] => Romain 
-        [accountNb] => N0900654321 
-        [solde] => 1250 
+        [firstname] => AUGE 
+        [lastname] => Laura 
+        [typeAccount] => Compte courant 
+        [accountNb] => N0900321654 
+        [createAccountDate] => 2021-09-01 
+        [solde] => 450 
+        [dealNb] => 0 
+        [dealType] => débit 
+        [description] => Virement vers livret A 
+        [dealDate] => 2021-12-18 01:21:39 
+        [amount] => 850.00 
     ) 
     [2] => Array ( 
-        [id] => 3 
-        [typeAccount] => PEL 
-        [firstname] => ANGER 
-        [lastname] => Romain 
-        [accountNb] => N0900654123 
-        [solde] => 650 
+        [firstname] => AUGE 
+        [lastname] => Laura 
+        [typeAccount] => Compte courant 
+        [accountNb] => N0900321654 
+        [createAccountDate] => 2021-09-01 
+        [solde] => 450 
+        [dealNb] => 0 
+        [dealType] => Crédit 
+        [description] => Virement depuis compte courant 
+        [dealDate] => 2021-12-18 01:21:39 
+        [amount] => 850.00 
     ) 
 )
