@@ -8,10 +8,10 @@ if (isset($_POST['submit']) && (!empty($_POST['log']) && !empty($_POST['pass']))
     $pass = htmlspecialchars($_POST['pass']);
 
     $sql = "SELECT * FROM customers where login = '$log'";
-    // $sql = "SELECT * FROM customers INNER JOIN accounts ON customers.id = accounts.customers_id where login = '$log'";
     $result = $db->prepare($sql);
     $result ->execute();
     $data = $result->fetchAll();
+    
     // Si le champ login est trouver dans la base de donné :
     if ($result->rowCount() > 0) {
         if ($log === $data[0]["login"] && $pass === $data[0]["password"]) {

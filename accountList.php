@@ -1,10 +1,10 @@
 <?php
-require 'model/connexion.php';
+require 'model/accountListRequest.php';
 
-$user_id = $_SESSION['user_id'];
+include_once "view/template/header.php";
+include_once "view/template/nav.php";
 
-// requete pour les comptes resumé a l'acceuil :
-$sqlList = "SELECT a.id, typeAccount, firstname, lastname, accountNb, solde FROM customers c INNER JOIN accounts a ON c.id = a.customers_id WHERE customers_id = '$user_id'";
-$accountLists = $db->prepare($sqlList);
-$accountLists ->execute();
-$accountList = $accountLists->fetchAll(PDO::FETCH_ASSOC);
+include 'view/accountListView.php';
+
+include_once "view/template/footer.php";
+?>

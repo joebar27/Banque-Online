@@ -14,7 +14,7 @@ echo('<h2 class="d-flex justify-content-center">
         . $_SESSION['user_firstname'] . ' '
         . $_SESSION['user_lastname'] . '</h2>'
     );
-include 'view/accountListView.php';
+include 'accountList.php';
 ?>
 
 <?php include_once "view/template/footer.php"; ?>

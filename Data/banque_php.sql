@@ -111,24 +111,43 @@ CREATE TABLE
 -- Ajout données de transaction :
 INSERT INTO
     Deal (
+        dealNb,
         dealType,
         description,
         amount,
         dealDate,
-        account_id,
-        customers_id
+        customers_id,
+        account_id
     )
 VALUES (
+        744484066,
         "débit",
         "Achat pull moche de noel",
-        "35",
+        34.99,
         NOW(),
-        1,
-        2
-    ), ("crédit", "Salaire", "1850", NOW(), 1, 1), ("débit", "Virement vers livret A", "850", NOW(), 1, 2), (
+        2,
+        4
+    ), (
+        700896893,
+        "crédit", 
+        "Salaire", 
+        1850.00, 
+        NOW(), 
+        1, 
+        1
+    ), (
+        702329482,
+        "débit", 
+        "Virement vers livret A", 
+        850.00, 
+        NOW(), 
+        2, 
+        1
+    ), (
+        731207267,
         "Crédit",
         "Virement depuis compte courant",
-        "850",
+        850.00,
         NOW(),
         2,
         2
