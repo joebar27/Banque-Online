@@ -4,7 +4,7 @@ include "view/template/nav.php";
 
 ?>
 <section class="d-flex justify-content-center">
-    <form class="d-flex flex-wrap justify-content-center contact-form col-10 mt-5">
+    <form class="d-flex flex-wrap justify-content-center contact-form col-8 mt-5">
         <h2 class="d-flex justify-content-center col-6 mt-2 mt-lg-5">
             Contactez-moi
         </h2>
