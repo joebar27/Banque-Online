@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  background-color: #45858c;
+  color: #a0d9d9;
+  height: 25vh;
+  justify-content: center;
+  align-items: center;
+}
+
+  header > div > h1,
+  header > div > p {
+    display: flex;
+    margin: 1rem;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  header > div > h1 {
+    font-size: 2rem;
+  }
+
+  /* ==========================================================================
+                                  Media Query
+   ========================================================================== */
+
+/*pour les taille d'ecran md*/
+@media screen and (min-width: 768px) {
+  header > div > h1 {
+    font-size: 3rem;
+  }
+
+}
+
+/*pour les taille d'ecran lg*/
+@media screen and (min-width: 992px) {
+  header > div > h1 {
+    font-size: 4rem;
+  }
+
+  header > div > p {
+    font-size: 1.2rem;
+  }
+}

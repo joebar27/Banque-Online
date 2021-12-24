@@ -1,0 +1,51 @@
+#pop {
+    background-color: #bf9765;
+  }
+  
+  #pop h1 {
+    font-size: 1.5rem;
+    color: #d92b04;
+  }
+  
+  #pop p {
+    color: #45858c;
+    font-size: 0.8rem;
+  }
+  
+  button {
+    background-color: #45858c;
+    color: #a0d9d9;
+  }
+  /* ==========================================================================
+                                  Media Query
+   ========================================================================== */
+
+/*pour les taille d'ecran md*/
+@media screen and (min-width: 768px) {
+    #pop p {
+      font-size: 1.4rem;
+    }
+  
+    #pop h1 {
+      font-size: 2.5rem;
+    }
+  
+    #popClose {
+      font-size: 1.4rem;
+    }
+}
+
+/*pour les taille d'ecran lg*/
+@media screen and (min-width: 992px) {
+  #pop p {
+    font-size: 1.4rem;
+  }
+
+  #popClose {
+    font-size: 1.5rem;
+  }
+
+  #pop h1 {
+    font-size: 3rem;
+  }
+}

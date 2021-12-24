@@ -11,10 +11,11 @@ echo('<h2 class="d-flex justify-content-center pt-5 pb-5 Voyages-1-hex">
         <li class="detailAccount col-12 d-flex justify-content-center m-0"> Titulaire : ' . $accountDetail[0]['firstname'] . ' ' . $accountDetail[0]['lastname'] .'</li>
         <li class="detailAccount d-flex justify-content-center col-12 col-lg-3 m-0"> Compte : ' . $accountDetail[0]['accountNb'] . '</li>
         <li class="detailAccount d-flex justify-content-center col-12 col-lg-3 m-0"> Date de création : ' . $accountDetail[0]['createAccountDate'] . '</li>
-        <li class="detailAccount d-flex justify-content-center col-12 col-lg-3 m-0"> Solde actuel : ' . $accountDetail[0]['solde'] . '</li>
+        <li class="detailAccount d-flex justify-content-center col-12 col-lg-3 m-0"> Solde actuel : ' . $accountDetail[0]['solde'] . ' €</li>
         <li class="detailAccount col-12 d-flex justify-content-center m-0">--------------------------------------------------------------</li>'
 
 );
+var_dump($accountId);
 foreach ($accountDetail as $accountD) {
     echo('
         <li class="detailAccount col-12 d-flex justify-content-center m-0">--------------------------------------------------------------</li>

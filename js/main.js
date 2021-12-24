@@ -14,6 +14,7 @@ const init = () => {
     // appel de la fonction du popUp d'avertissement
     popUpDisplay();
   }
+  getBlogs();
 };
 
 //appel de la fonction init au chargement de la page

@@ -1,0 +1,18 @@
+nav {
+  background-color: #d9c589;
+  color: #45858c;
+  min-height: 5vh;
+}
+
+/* ==========================================================================
+                                  Media Query
+   ========================================================================== */
+
+/*pour les taille d'ecran md*/
+@media screen and (min-width: 768px) {
+}
+
+/*pour les taille d'ecran lg*/
+@media screen and (min-width: 992px) {
+  
+}

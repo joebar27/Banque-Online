@@ -1,8 +1,3 @@
-<?php
-include "view/template/header.php";
-include "view/template/nav.php";
-?>
-
 <section class="d-flex col-12 justify-content-center justify-content-md-around">
 
     <div class="d-flex flex-column col-lg-6 flex-lg-column justify-content-center mt-md-3">
@@ -43,5 +38,3 @@ include "view/template/nav.php";
         </div>
     </div>
 </section>
-
-<?php include "view/template/footer.php"; ?>

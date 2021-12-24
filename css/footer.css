@@ -1,0 +1,28 @@
+footer {
+    background-color: #45858c;
+    color: #a0d9d9;
+    height: 5vh;
+  }
+  
+  footer ul {
+    list-style-type: none;
+  }
+  
+  footer a {
+    color: #d9c589;
+  }
+/* ==========================================================================
+                                  Media Query
+   ========================================================================== */
+
+/*pour les taille d'ecran md*/
+@media screen and (min-width: 768px) {
+    footer a {
+      font-size: 1.5rem;
+    }
+  }
+
+/*pour les taille d'ecran lg*/
+@media screen and (min-width: 992px) {
+    
+}

@@ -27,14 +27,14 @@ function getBlogs() {
   httpRequest.send();
 }
 
-//initialisation et execution
-const init = () => {
+// //initialisation et execution
+// const init = () => {
 
-  // appel de la fonction
-  getBlogs();
-}
+//   // appel de la fonction
+//   getBlogs();
+// }
 
-//appel de la fonction init au chargement de la page
-window.addEventListener('load', () => {
-  init();
-});
+// //appel de la fonction init au chargement de la page
+// window.addEventListener('load', () => {
+//   init();
+// });
