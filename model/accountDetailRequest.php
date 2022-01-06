@@ -12,10 +12,10 @@ $sqldetail="SELECT firstname, lastname, typeAccount, accountNb, createAccountDat
             ON c.id = d.customers_id 
             INNER JOIN accounts a 
             ON c.id = a.customers_id 
-            WHERE a.customers_id = '$user_id' AND a.id = '$accountId'";
+            WHERE a.customers_id = :user_id AND a.id = :accountId";
 
 $accountDetails = $db->prepare($sqldetail);
-$accountDetails ->execute();
+$accountDetails ->execute(array(':user_id'=> $user_id, ':accountId'=> $accountId));
 $accountDetail = $accountDetails->fetchAll(PDO::FETCH_ASSOC);
 
 

@@ -6,7 +6,7 @@ $sqlList = "SELECT a.id, typeAccount, firstname, lastname, accountNb, solde
             FROM customers c 
             INNER JOIN accounts a 
             ON c.id = a.customers_id 
-            WHERE customers_id = '$user_id'";
+            WHERE customers_id = :user_id";
 $accountLists = $db->prepare($sqlList);
-$accountLists ->execute();
+$accountLists ->execute(array(':user_id'=> $user_id));
 $accountList = $accountLists->fetchAll(PDO::FETCH_ASSOC);
