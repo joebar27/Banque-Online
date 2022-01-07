@@ -1,4 +1,6 @@
 <?php
+require_once "model/pdoConnexion.php";
+require 'model/userLogin.php';
 session_start();
     // var_dump($_SESSION['user']);
 

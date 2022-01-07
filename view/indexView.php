@@ -1,5 +1,5 @@
 <?php
-require 'model/connexion.php';
+// require 'model/pdoConnexion.php';
 include_once 'view/template/header.php';
 include_once 'view/template/nav.php';
 
