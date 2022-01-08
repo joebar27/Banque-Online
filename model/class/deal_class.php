@@ -1,7 +1,7 @@
 <?php
 
-class Deal {
-
+class Deal
+{
     protected int $id;
     protected int $dealNb;
     protected string $dealType;
@@ -13,98 +13,114 @@ class Deal {
 
     //--------------------------------------------------------------
 
-    public function __contructor(array $data=null) {
+    public function __contructor(array $data=null)
+    {
         if ($data) {
             $this->hydrate($data);
         }
     }
-    public function hydrate(array $data) {
+    public function hydrate(array $data)
+    {
         foreach ($data as $key => $value) {
-          $method = "set". ucfirst($key);
-          if(method_exists($this, $method)) {
-            $this->$method($value);
-          }
+            $method = "set". ucfirst($key);
+            if (method_exists($this, $method)) {
+                $this->$method($value);
+            }
         }
     }
 
     //--------------------------------------------------------------
 
-    public function setId($id) {
+    public function setId($id)
+    {
         $this->id = $id;
         return $this;
     }
-    public function getId() {
+    public function getId()
+    {
         return $this->id;
     }
 
     //--------------------------------------------------------------
 
-    public function setDealNb($dealNb) {
+    public function setDealNb($dealNb)
+    {
         $this->dealNb = $dealNb;
         return $this;
     }
-    public function getDealNb() {
+    public function getDealNb()
+    {
         return $this->dealNb;
     }
     
     //--------------------------------------------------------------
 
-    public function setDealType($dealType) {
+    public function setDealType($dealType)
+    {
         $this->dealType = $dealType;
         return $this;
     }
-    public function getDealType() {
+    public function getDealType()
+    {
         return $this->dealType;
     }
     
     //--------------------------------------------------------------
 
-    public function setDescription($description) {
+    public function setDescription($description)
+    {
         $this->description = $description;
         return $this;
     }
-    public function getDescription() {
+    public function getDescription()
+    {
         return $this->description;
     }
 
     //--------------------------------------------------------------
 
-    public function setAmount($amount) {
+    public function setAmount($amount)
+    {
         $this->amount = $amount;
         return $this;
     }
-    public function getAmount() {
+    public function getAmount()
+    {
         return $this->amount;
     }
 
     //--------------------------------------------------------------
-    public function setDealDate($dealDate) {
+    public function setDealDate($dealDate)
+    {
         $this->dealDate = $dealDate;
         return $this;
     }
-    public function getDealDate() {
+    public function getDealDate()
+    {
         return $this->dealDate;
     }
     
     //--------------------------------------------------------------
 
-    public function setCustommers_id($custommers_id) {
+    public function setCustommers_id($custommers_id)
+    {
         $this->custommers_id = $custommers_id;
         return $this;
     }
-    public function getCustommers_id() {
+    public function getCustommers_id()
+    {
         return $this->custommers_id;
     }
 
     //--------------------------------------------------------------
 
-    public function setAccount_id($account_id) {
+    public function setAccount_id($account_id)
+    {
         $this->account_id = $account_id;
         return $this;
     }
-    public function getAccount_id() {
+    public function getAccount_id()
+    {
         return $this->account_id;
-    }    
+    }
 }
-
-?>

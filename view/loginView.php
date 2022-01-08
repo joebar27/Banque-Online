@@ -11,10 +11,10 @@ include_once 'view/template/nav.php';
             Connectez vous
         </h2>
         <div class="d-flex flex-wrap justify-content-center form-content">
-            <input class="d-flex col-10 p-2" type="text" id="log" name="log" placeholder="Identifiant *" />
-            <input class="d-flex col-10 p-2" type="password" id="pass" name="pass" placeholder="Mot de passe *" />
+            <input class="d-flex col-10 p-2" type="text" id="login" name="login" placeholder="Identifiant *" />
+            <input class="d-flex col-10 p-2" type="password" id="password" name="password" placeholder="Mot de passe *" />
         </div>
-        <button class="button p-0 mt-lg-3 col-12" name="submit">Connection</button>
+        <button class="button p-0 mt-lg-3 col-12" name="submit" value="connect">Connection</button>
         <div class="d-flex flex-wrap justify-content-center align-content-center">
             <p class="d-flex form-message m-0 p-3"></p>
         </div>

@@ -1,36 +1,33 @@
+<!-- CONTROLEUR DE LA PAGE DE CONNECTION CLIENT -->
 <?php
 require 'model/class/customers_class.php';
 require 'model/userLogin.php';
 session_start();
 
 // Si tout les champs sont rempli:
-if (isset($_POST['submit']) && (!empty($_POST['log']) && !empty($_POST['pass']))) {
-    // $login = htmlspecialchars($_POST['log']);
-    // $pass = htmlspecialchars($_POST['pass']);
+if (isset($_POST['submit']) && (!empty($_POST['login']) && !empty($_POST['password']))) {
     
-    // $sql = "SELECT * FROM customers where login = '$login'";
-    // $result = $db->prepare($sql);
-    // $result ->execute();
-    // $data = $result->fetchAll();
-
     try {
         $userlog = new Customer($_POST);
         $login = new UserLogin();
-        $username = $login->getUserByLogin($userlog);
+        $userbdd = $login->getUserByLogin($userlog);
     } catch (Exception $e) {
         $error = $e->getMessage();
     }
     
     // Si le champ login est trouver dans la base de donné :
-    if ($userLogin->rowCount() > 0) {
-        if ($log === $data[0]["login"] && $pass === $data[0]["password"]) {
-            $_SESSION['user_id'] = $data[0]['id'];
-            $_SESSION['user_sex'] = $data[0]['sex'];
-            $_SESSION['user_firstname'] = $data[0]['firstname'];
-            $_SESSION['user_lastname'] = $data[0]['lastname'];
+    if ($userbdd) {
+        // print_r($userlog->getLogin() . $userlog->getPassword());
+        print_r($userbdd);
+        // print_r($login);
+        if ($userlog->getLogin() === $userbdd['login'] && $userlog->getPassword() === $userbdd['password']) {
+            $_SESSION['user_id'] = $userbdd['id'];
+            $_SESSION['user_sex'] = $userbdd['sex'];
+            $_SESSION['user_firstname'] = $userbdd['firstname'];
+            $_SESSION['user_lastname'] = $userbdd['lastname'];
             include 'view/indexView.php';
         }
-        if ($log === $data[0]["login"] && $pass !== $data[0]["password"]) {
+        if ($userlog->getLogin() === $userbdd['login'] && $userlog->getPassword() !== $userbdd['password']) {
             include 'view/loginErrorView.php';
         }
     } else {
@@ -40,4 +37,5 @@ if (isset($_POST['submit']) && (!empty($_POST['log']) && !empty($_POST['pass']))
     // Si le champ de login n'est pas trouver dans la base de donné :
 } else {
     include 'view/unknownUserView.php';
+
 }

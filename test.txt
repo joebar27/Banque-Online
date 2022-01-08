@@ -1,0 +1,61 @@
+<====  var_dump($customer) ====>
+
+object(Customer)#1 (2) { 
+    ["id":protected]=> uninitialized(int) 
+    ["firstname":protected]=> uninitialized(string) 
+    ["lastname":protected]=> uninitialized(string) 
+    ["birthdayDate":protected]=> uninitialized(string) 
+    ["sex":protected]=> uninitialized(string) 
+    ["adress":protected]=> uninitialized(string) 
+    ["city":protected]=> uninitialized(string) 
+    ["postalCode":protected]=> uninitialized(int) 
+    ["country":protected]=> uninitialized(string) 
+    ["phoneNb":protected]=> uninitialized(string) 
+    ["email":protected]=> uninitialized(string) 
+    ["login":protected]=> string(8) "joebar27" 
+    ["password":protected]=> string(6) "qsdfgh" 
+    } 
+    
+
+<==== print_r($userlog) ====>
+
+Customer Object ( 
+    [login:protected] => joebar27 
+    [password:protected] => qsdfgh 
+    ) 
+    
+
+<==== print_r($username) ====>
+
+Array ( 
+    [id] => 1 
+    [firstname] => ANGER 
+    [lastname] => Romain 
+    [birthdayDate] => 1987-06-13 
+    [sex] => Mr 
+    [adress] => 4 chemin des longueraies 
+    [city] => Jonquerets de livet 
+    [postalCode] => 27410 
+    [country] => France 
+    [phoneNb] => 0695915444 
+    [email] => anger.romain@gmail.com 
+    [login] => joebar27 
+    [password] => azerty )
+
+
+<==== var_dump($account) ====>
+
+object(Account)#1 (0) { 
+    ["id":protected]=> uninitialized(int) 
+    ["accountNb":protected]=> uninitialized(string) 
+    ["typeAccount":protected]=> uninitialized(string) 
+    ["solde":protected]=> uninitialized(float) 
+    ["createAccountDate":protected]=> uninitialized(string) 
+    ["customers_id":protected]=> uninitialized(int) 
+    } 
+    
+
+<==== var_dump($bddAccount) ====>
+
+object(AccountList)#2 (1) { 
+    ["db":protected]=> object(PDO)#3 (0) { } }
