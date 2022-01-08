@@ -18,14 +18,15 @@ if (isset($_POST['submit']) && (!empty($_POST['login']) && !empty($_POST['passwo
     // Si le champ login est trouver dans la base de donné :
     if ($userbdd) {
         // print_r($userlog->getLogin() . $userlog->getPassword());
-        print_r($userbdd);
+        // print_r($userbdd);
         // print_r($login);
         if ($userlog->getLogin() === $userbdd['login'] && $userlog->getPassword() === $userbdd['password']) {
             $_SESSION['user_id'] = $userbdd['id'];
             $_SESSION['user_sex'] = $userbdd['sex'];
             $_SESSION['user_firstname'] = $userbdd['firstname'];
             $_SESSION['user_lastname'] = $userbdd['lastname'];
-            include 'view/indexView.php';
+            // include "view/indexView.php";
+            header('Location: index.php');
         }
         if ($userlog->getLogin() === $userbdd['login'] && $userlog->getPassword() !== $userbdd['password']) {
             include 'view/loginErrorView.php';

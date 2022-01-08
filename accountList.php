@@ -1,6 +1,4 @@
 <?php
-include_once "view/template/header.php";
-include_once "view/template/nav.php";
 require_once 'model/accountListRequest.php';
 
 $account = new Account();
@@ -11,5 +9,4 @@ print_r($bddAccount);
 // var_dump($dataAccount);
 // include 'view/accountListView.php';
 
-include_once "view/template/footer.php";
 ?>

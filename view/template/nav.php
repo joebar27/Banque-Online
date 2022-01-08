@@ -41,7 +41,7 @@
         if (isset($_SESSION['user_id'])){
           echo '<a class="btn btn-outline-danger me-2" name="logout" href="logout.php" method="post">Déconnection</a>';
         }else {
-          echo '<a class="btn btn-outline-success me-2" name="login" href="index.php" method="post">Connection</a>';
+          echo '<a class="btn btn-outline-success me-2" name="login" href="login.php" method="post">Connection</a>';
         }
         ?>
         <!-- <form class="d-flex mb-0">

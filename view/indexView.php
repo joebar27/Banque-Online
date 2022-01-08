@@ -1,5 +1,4 @@
 <?php
-// require 'model/pdoConnexion.php';
 include_once 'view/template/header.php';
 include_once 'view/template/nav.php';
 
@@ -14,7 +13,6 @@ echo('<h2 class="d-flex justify-content-center">
         . $_SESSION['user_firstname'] . ' '
         . $_SESSION['user_lastname'] . '</h2>'
     );
-include 'accountList.php';
-?>
+include 'view/accountListView.php';
 
-<?php include_once "view/template/footer.php"; ?>
+include_once "view/template/footer.php"; ?>

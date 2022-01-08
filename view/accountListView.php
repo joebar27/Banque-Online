@@ -1,3 +1,9 @@
+<?php
+require 'model/accountListRequest.php';
+
+include_once "view/template/header.php";
+include_once "view/template/nav.php";
+?>
 
 <section class="d-flex col-12 flex-wrap justify-content-center pt-3 pb-4 justify-content-md-around pt-md-5">
 
@@ -17,3 +23,5 @@
     ?>
 
 </section>
+
+<?= include_once "view/template/footer.php"; ?>
